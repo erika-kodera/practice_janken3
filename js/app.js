@@ -16,9 +16,15 @@ function getHumHand() {
   }
 }
 
+// コンピューターの手を決める
+function getComHand() {
+  return Math.floor(Math.random() * 3) + 1;
+}
 /* 実行する処理 *********/
 let hum = getHumHand();
 if (!hum) {
   alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
 } else {
+  let com = getComHand();
+  console.log(com); //この行は動作確認後削除
 }
