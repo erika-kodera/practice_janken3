@@ -54,4 +54,5 @@ if (!hum) {
   alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
 } else {
   let com = getComHand();
+  alert(getResultMsg(com, hum));
 }
