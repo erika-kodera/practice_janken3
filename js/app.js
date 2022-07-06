@@ -18,4 +18,7 @@ function getHumHand() {
 
 /* 実行する処理 *********/
 let hum = getHumHand();
-console.log(hum); //動作確認後削除
+if (!hum) {
+  alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
+} else {
+}
