@@ -20,11 +20,22 @@ function getHumHand() {
 function getComHand() {
   return Math.floor(Math.random() * 3) + 1;
 }
+
+// コンピューターの手の名前を取得
+function getHandName(num) {
+  switch (num) {
+    case GU:
+    return 'グー';
+    case CHOKI:
+    return 'チョキ';
+    case PA:
+    return 'パー';
+  }
+}
 /* 実行する処理 *********/
 let hum = getHumHand();
 if (!hum) {
   alert('入力値をうまく認識できませんでした。ブラウザを再読み込みすると、もう一度挑戦できます。');
 } else {
   let com = getComHand();
-  console.log(com); //この行は動作確認後削除
 }
