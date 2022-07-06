@@ -32,6 +32,17 @@ function getHandName(num) {
     return 'パー';
   }
 }
+
+// 結果の判定
+function getResult (com, hum) {
+  if (hum === com) {
+    return 'あいこでした。';
+  } else if ((com === GU && hum === PA) || (com === CHOKI && hum === GU) || (com === PA && hum === CHOKI)) {
+    return 'あなたの勝ち。';
+  } else {
+    return 'あなたの負け。';
+  }
+}
 /* 実行する処理 *********/
 let hum = getHumHand();
 if (!hum) {
