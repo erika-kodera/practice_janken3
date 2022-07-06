@@ -2,7 +2,7 @@
 // ジャンケンの手の番号を設定
 const GU    = 1;
 const CHOKI = 2;
-const GU    = 3;
+const PA    = 3;
 
 /* 関数定義 ***********/
 // 人間に手を入力してもらう機能
@@ -15,3 +15,7 @@ function getHumHand() {
     return hum;
   }
 }
+
+/* 実行する処理 *********/
+let hum = getHumHand();
+console.log(hum); //動作確認後削除
